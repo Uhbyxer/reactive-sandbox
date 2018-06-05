@@ -83,7 +83,9 @@ public class ReactiveExamplesTest {
 
         people.delayElements(Duration.ofSeconds(1))
                 .subscribe(person -> log.info(person.sayMyName()));
+//                .subscribe(person -> System.out.println("swswsws"));
 
+        Thread.currentThread().sleep(4000);
     }
 
     @Test
